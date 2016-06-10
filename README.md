@@ -30,7 +30,7 @@ mdgInfoLineaFijo	Información MDG detallada de una línea de fijo
 
 El nombre del archivo es el mismo que el de la propia directiva, con extensión “.js”.  Así, por ejemplo, en la sección <HEAD>  del archivo HTML donde se quiera insertar la directiva “inputMsisdn” deberá aparecer la siguiente etiqueta:
 
-<script src="https://satellite-cms-des.int.si.orange.es/static/BPaaS/js/inputMsisdn.js"></script>
+< script src="https://satellite-cms-des.int.si.orange.es/static/BPaaS/js/inputMsisdn.js"></script>
 
 4)	Inserción de directivas AngularJS dentro del código de la página. La directiva se inserta en el código HTML siguiendo las reglas de nomenclatura y asignación de AngularJS, tanto como tag ad-hoc como clase. Por ejemplo, la directiva “inputUserLevel” puede añadirse a cualquier página o sección utilizando las dos variantes:
 
