@@ -54,28 +54,7 @@ Este ejemplo fuerza la carga de datos de perfil de cliente para el número prede
 Maquetación y adaptación visual (ajustes CSS)
 Las directivas se pueden insertar dentro de cualquier espacio en el área visual de la página. Están diseñadas con técnica responsivo y en general se adaptan a las dimensiones del espacio disponible, aunque queda a criterio del webmaster modificar las clases CSS propias de la librería BPaaS. En otros documentos se especificarán las clases y atributos CSS que definen los aspectos visuales de cada una de las directivas creadas.
 
-Ejemplo de integración
-Supongamos un bloque de código AngularJS como el siguiente:
 
-<ion-content class="padding has-header" overflow-scroll='true'>
-	 <div class="list">
-		 <div class="sepShadow">
-		  <div>
-			<div class="input-user-level" userlevel="BPaaSCatalog.userlevel" /></div>
-		       <div class="input-msisdn"  msisdn="BPaaSCatalog.msisdn" /></div>
-		  </div>	
-		<div ng-show="BPaaSCatalog.msisdn > 600000000" class="profile-data posRel" msisdn="{{BPaaSCatalog.msisdn}}" /></div>
-		 <div class='row'>
-		  <div class='col col-50'>
-		   <div ng-show="BPaaSCatalog.msisdn > 600000000" class="invoice-list" msisdn="{{BPaaSCatalog.msisdn}}" /></div>
-		  <div ng-show="BPaaSCatalog.msisdn > 600000000" class='chart-invoices' msisdn="{{BPaaSCatalog.msisdn}}"></div>
-		</div>
-		 <div class='col col-50'>
-		  <div  class="invoice-detail-nav" invoice={{BPaaSCatalog.invoiceDetailRequest}} /></div>
-		</div>
-	</div>
-	</div>	
-	</ion-content>
 
  
  
