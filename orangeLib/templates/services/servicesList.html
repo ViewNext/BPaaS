@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<style>
+.title { font-weight: bold; font-size:102% }
+.description { font-size:96%; font-family:"Helvetica Neue", sans-serif, "Segoe UI", "Roboto" !important;  }
+</style>
+<div class='card'>
+	<h4>Lista de servicios disponibles para MSISDN {{msisdn}}</h4>
+
+		<ion-toggle ng-model="ns.installedFlag" toggle-class="toggle-calm" ng-disabled="ns.toggleProtected" ng-repeat='ns in networkServices' ng-click='changeNetworkServiceStatus(ns)'>
+			<div class='title'>{{ns.name}}</div>
+			<div class='description'>
+				<h2 ng-bind-html='ns.description | html'></h2>
+				<h2> <i><a href='{{ns.linkMoreInfo}}'>Más info</a></i></h2>
+			</div>
+		</ion-toggle>
+		<div ng-show='!networkServices'>
+			<td colspan='4'> Cargando datos. Por favor espera....</div>
+		</div>
+</div>

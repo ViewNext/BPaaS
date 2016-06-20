@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+
+<div class="mdgTab sepShadow" ng-show="mdgData">
+	<div class="row">
+		<div class="col title">Relación de lineas contratadas para MSISDN <span class="emText">{{msisdn}}</span> </div>
+	</div>	
+	<table ng-if="lineas.movil.length > 0">
+		<caption>Líneas de movil</caption>
+		<thead>
+			<tr>
+				<th>Número</th>
+				<th>tipo contrato</th>			
+				<th>Estado</th>
+				<th>Fecha</th>			
+			</tr>	
+		</thead>
+		<tbody>
+			<tr ng-repeat="linea in lineas.movil" ng-click="loadMDGFullData(linea.msisdn)" class="tdCenter">
+				<td class="clickable">{{linea.msisdn}}</td>
+				<td>{{linea.tipocontrato}}</td>			
+				<td>{{linea.estado}}</td>
+				<td>{{linea.fechaactivacion | dateESP}}</td>			
+			</tr>	
+		</tbody>
+		
+	</table>
+	<table ng-if="lineas.fijo.length > 0">
+		<caption>Líneas de teléfono fijo</caption>
+		<thead>
+			<tr>
+				<th>Número</th>
+				<th>Tipo contrato</th>			
+				<th>Estado</th>
+				<th>Fecha</th>			
+			</tr>	
+		</thead>
+		<tbody>
+			<tr ng-repeat="linea in lineas.fijo" ng-click="loadMDGFullData(linea.msisdn)" class="tdCenter">
+				<td>{{linea.msisdn}}</td>
+				<td>{{linea.tipocontrato}}</td>			
+				<td>{{linea.estado}}</td>
+				<td>{{linea.fechaactivacion | dateESP}}</td>			
+			</tr>	
+		</tbody>
+	</div>
+</div>

@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+
+<ion-header-bar class="bar bar-positive nav-title-slide-ios7">
+	<button class="button" onclick="window.history.back()"><span class="icon ion-arrow-left-c"></span></button><h2>Datos de la línea contratada {{lineSelected}}</h2>
+</ion-header-bar>
+
+<ion-view >
+    <ion-content class="has-header" overflow-scroll='true'>
+			<div class="mdg-info-linea-movil userData_APP15 posRel" lineselected="{{lineSelected}}"></div>
+			
+			<div class="services-list userData_APP15 posRel" msisdn={{lineSelected}} ></div>
+    </ion-content>
+</ion-view>

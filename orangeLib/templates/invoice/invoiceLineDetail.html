@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<style>
+
+</style>
+ <div ng-show='detalleLinea' style=''>
+	<h4>Detalle de cargos para la linea {{ numeroLinea }}</h4>
+	<table ng-show='detalleLinea'>
+		<tr class='invoicelines header'>
+			<td>Concepto</td>
+			<td>Descripcion</td>
+			<td>Importe</td>
+		</tr>
+		<tr ng-repeat='cargo in detalleLinea' class='dataLine'>
+			<td>{{ cargo.personalizacion.titulo }}</td>
+			<td>{{ cargo.personalizacion.tituloDoc1 }}</td>
+			<td class='euro'>{{ cargo.importe | moneyESP }}</td>
+		</tr>
+	</table>
+</div>

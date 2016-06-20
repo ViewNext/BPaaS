@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+
+<div class="mdgTab sepShadow" >
+	<div class="col title">Datos de línea de teléfono fijo: <span class="emText">{{ contrato.numerotelefonofijo }}</span></div>
+	<div ng-repeat="cuenta in mdgInfoFijo.cuentas" class="module">
+		<h4>Cuenta</h4>
+			<div ng-repeat="contrato in cuenta.contratos">
+				<table class="twoColumnsTable">
+					<tr>
+						<td>Contrato:</td><td>{{contrato.idcontrato}}</td>
+					</tr>	
+					<tr>
+						<td>Fecha alta:</td><td>{{contrato.fechaaltalineafija | dateESP }}</td>
+					</tr>	
+					<tr>
+						<td>Router:</td><td>{{contrato.routerfijodescripcion}}</td>
+					</tr>	
+					<tr>
+						<td>tarifa ADSL:</td><td>{{contrato.tarifaadsldescripcion}}</td>
+					</tr>	
+					<tr>
+						<td>Fecha alta ADSL:</td><td>{{contrato.fechaaltalineaadsl |dateESP }}</td>
+					</tr>		
+					<tr>
+						<td>Estado línea ADSL:</td><td>{{contrato.estadolineaadsl}}</td>
+					</tr>	
+					<tr>
+						<td>¿Tiene Orange TV?:</td><td>{{contrato.orangetv}}</td>
+					</tr>	
+				</table>
+				<div class="tableCol">
+					<div class="row header">
+						<div class="col col-70-sm">Descripcion</div>
+						<div class="col col-20-sm">fecha alta</div>
+						<div class="col col-10-sm">Estado</div>
+					</div>
+					<div class="row dataLine" ng-repeat="producto in contrato.productosasociados">
+						<div class="col col-70-sm">{{producto.descripcion}}</div>
+						<div class="col col-20-sm">{{producto.fechaaltaproductoasociado | dateESP }}</div>
+						<div class="col col-10-sm">
+                        	<span ng-show="producto.estadoproductoasociado == 'INSTALADO'" class="icon ion-checkmark-round"></span>
+                            <span ng-show="producto.estadoproductoasociado == 'DESCONECTADO'" class="icon ion-close-round"></span>
+                        </div>
+					</div>	
+				</div>
+						
+			</div>
+	
+	</div>
+</div>

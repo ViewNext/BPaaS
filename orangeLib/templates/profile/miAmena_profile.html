@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<div class='profileTab'>
+	<div>
+		<div class='col title'> Perfil de usuario para MSISDN:{{ msisdn }}</div>
+	</div>
+	<div class='row'>
+		<div class='fname col col-10-sm'>Nombre</div><div class='col colData'>{{ perfil.user.firstName}} {{ perfil.user.lastName}}</div>
+	</div>
+	<div class='row'>
+		<div class='fname col col-10-sm'>Customer ID</div><div class='col colData'>{{ perfil.user.customerId }}</div>
+	</div>
+	<div class='row' ng-show='level < 2'>
+		<div class='fname col col-10-sm'>NIF/DNI</div><div class='col colData'>{{ perfil.user.identityNum }}</div>
+	</div>
+	
+	<!-- area de contratos -->
+	<div class='profileContract' ng-repeat='contrato in perfil.contract'  ng-show='level < 2'>
+		<div class='row'>
+			<div class='fname col col-50'>Contrato: {{ contrato.contractId }}</div>
+			<div class='fname col col-50'>Fecha: {{ contrato.activationDate | dateESP }}</div>
+		</div>
+		<div class='row profileLines header'>
+			<div class='col col-20'>MSISDN</div>
+			<div class='col col-20'>Tipo</div>
+			<div class='col col-20'>Tarifa voz</div>
+			<div class='col col-20'>Tarifa datos</div>
+			<div class='col col-20'>Segmento</div>
+		</div>
+		<div class='row profileLines dataLine' ng-repeat='linea in perfil.lineas'>
+			<div class='col col-20'>{{ linea.msisdn }}</div>
+			<div class='col col-20'>{{ contrato.lineArray[0].partyType }}</div>
+			<div class='col col-20' ng-bind-html="contrato.lineArray[0].dataVoicePlan | html"></div>
+			<div class='col col-20' ng-bind-html="contrato.lineArray[0].dataRatePlan | html"></div>
+			<div class='col col-20'>{{ contrato.lineArray[0].segment }}</div>
+		</div>
+	</div>
+</div>

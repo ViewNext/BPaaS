@@ -1,0 +1,59 @@
+<meta charset="UTF-8">
+
+<style>
+	.invoiceTab{
+    	background-color: rgb(247, 247, 247);
+    }
+    .invoiceTab .title{
+    	color: #AAAAAA;
+	    font-size: 18px;
+	    line-height: 1.5rem;
+    }
+       
+	.invoiceTab img.logo {
+		width: 5rem;
+		height: 5rem;
+		margin-bottom: .5rem;
+	}
+	.col.title strong{ color:  #FF6700;}
+	.invoiceLines.header .col { 
+		background-color: #FF6700;
+		color: #fff;
+	}
+	.invoiceLines .col {
+    	border: 1px #FFD799 solid;
+	}
+	.invoiceLines.dataLine {
+		background-color: #FDEFD7;
+	}
+	.invoiceLines.dataLine:hover {
+		cursor: pointer;
+		background-color: #fff;
+	}
+	
+</style>
+<div ng-if='cargandoFacturas'>Cargando últimas facturas. Por favor espera...</div>
+<div class='invoiceTab'>
+	<div class='row'>
+		<div class='col title'> Relación de últimas facturas para MSISDN: {{ msisdn }}</div>
+	</div>
+	
+	<!-- area de facturas -->
+		<div class='row' ng-if='errorFacturas'> Error cargando facturas </div>
+		<div class='row' ng-if='sinFacturas'> No hay datos de facturas para este número </div>
+		<div class='row' ng-if='cargandoFacturas && invoiceList.length > 0'> Cargando datos. Espere... </div>
+								
+		<div class='row invoiceLines header'>
+			<div class='col col-33'>Fecha</div>
+			<div class='col col-20'>Importe</div>
+			<div class='col'>Num.factura</div>
+		</div>
+		<div class='row invoiceLines dataLine' ng-repeat='factura in invoiceList'  ng-click='goInvoiceDetails(factura)'>
+			<div class='col link col-33'>{{ factura.fecha }}</div>
+			<div class='col link col-20'>{{ factura.importe }}</div>
+			<div class='col link'>{{ factura.idFactura }}</div>
+		</div>
+</div>
+    <div class="item item-text-wrap" ng-if='grafica'>
+       	<canvas id="demoGraph01" class="chart chart-bar" chart-data="invoiceChart.data" chart-labels="invoiceChart.labels" chart-options='invoiceChart.options' colours='invoiceChart.colours' />
+    </div>

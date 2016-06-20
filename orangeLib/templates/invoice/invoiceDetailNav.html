@@ -1,0 +1,100 @@
+<meta charset="UTF-8">
+
+<style>
+	.invoiceTab{
+    	background-color: rgb(247, 247, 247);
+    }
+    .invoiceTab .title{
+    	color: #AAAAAA;
+	    font-size: 18px;
+	    line-height: 1.5rem;
+    }
+       
+	.invoiceTab img.logo {
+		width: 5rem;
+		height: 5rem;
+		margin-bottom: .5rem;
+	}
+	.col.title strong{ color:  #FF6700;}
+	.invoiceLines.header .col { 
+		background-color: #FF6700;
+		color: #fff;
+	}
+	.invoiceLines .col {
+    	border: 1px #FFD799 solid;
+	}
+	.invoiceLines.dataLine {
+		background-color: #FDEFD7;
+	}
+	.invoiceLines.dataLine:hover {
+		cursor: pointer;
+		background-color: #fff;
+	}
+	.euro { 
+	text-align:right;
+	}
+	.euro::after{
+		content: " €";
+	}
+</style>
+<div ng-if='cargandoFactura'>Cargando datos de factura. Por favor espera...</div>
+<div class='invoiceTab' ng-show='detalleFactura != null'>
+	<div class='row'>
+		<div class='col title'> Detalle de la factura. </div>
+	</div>
+	<div class='row'>
+		<div class='col'>Factura: {{detalleFactura.idFactura}}</div>
+		<div class='col'>Mes:{{detalleFactura.mes}}/{{detalleFactura.anio}}</div>
+	</div>
+	<div class='row'>
+		<div class='col'>Fecha inicio: {{ detalleFactura.datosFacturacion.fechaInicio | dateESP }} </div>
+		<div class='col'>Fecha final: {{ detalleFactura.datosFacturacion.fechaFinal | dateESP }} </div>
+		<div class='col'>Importe: {{detalleFactura.importe | moneyESP }}</div>
+	</div>	
+	<div  ng-show='detalleFactura.lineaArray'>
+		<div class='title'>Líneas contratadas</div>
+			<div class='row invoiceLines header'>
+				<div class='col'>Num. línea</div>
+				<div class='col'>Tipo </div>
+				<div class='col'>Tarifa</div>
+				<div class='col money'>Importe</div>
+			</div>
+			<div ng-repeat='linea in detalleFactura.lineaArray' class='item dataLine' ng-click='showLineDetailConcepts(linea.msisdn)'>
+				<div class='row'>
+					<div class='col'>{{ linea.msisdn }} </div>
+					<div class='col'>{{ linea.tipoLinea }}</div>
+					<div class='col'>{{ linea.tarifa }}</div>
+					<div class='col euro'>{{ linea.importe | moneyESP }}</div>
+				</div>
+				<div class='row'>
+					<invoice-line-detail linea={{linea.msisdn}} invoice={{invoiceDetailRequest}} requested={{lineaDetailRequest}} />
+				</div>
+			</div>
+	</div>
+
+	<div class='list card' ng-show='impuestos'>
+	 	<div class='title'>Impuestos y cargos aplicables a la factura</div>
+			<div class='row invoiceLines header'>
+				<div class='col col-75'>Concepto </div>
+				<div class='col col-15'>Importe</div>
+			</div>
+			<div ng-repeat='concepto in impuestos' class='item row value' ng-show='!isNaN(concepto.importe) && (concepto.personalizacion.titulo || concepto.personalizacion.tituloDoc1)'>				
+				<div class='col col-75'>
+							<span ng-if='concepto.personalizacion.titulo'>{{concepto.personalizacion.titulo}}.</span>
+							<span ng-if='concepto.personalizacion.tituloDoc1 && concepto.personalizacion.tituloDoc1 != concepto.personalizacion.titulo'>{{concepto.personalizacion.tituloDoc1}}</span>
+				</div>
+				<div class='col euro'>{{ concepto.importe | moneyESP }}</div>
+			</div>
+			<!-- 
+				<div class='item row value'>
+					<div class='col col-10'>{{ impuestos.tipoElemento}}</div>
+					<div class='col col-75'>
+							<span ng-if='impuestos.personalizacion.titulo'>{{impuestos.personalizacion.titulo}}</span>
+							<span ng-if='impuestos.personalizacion.tituloDoc1 && impuestos.personalizacion.tituloDoc1 != impuestos.personalizacion.titulo'> ({{impuestos.personalizacion.tituloDoc1}})</span>
+					</div>
+					<div class='col col-15 euro'>{{ impuestos.importe | moneyESP }}</div>	
+				</div>			
+			-->	
+	</div>
+
+</div>

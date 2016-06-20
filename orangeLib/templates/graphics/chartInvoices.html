@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+	<div ng-if='cargandoFacturas'>Cargando datos de facturas. Por favor espera...</div>
+    <div class="card" ng-show='msisdn && !cargandoFacturas && !sinFacturas && !errorFacturas'>
+        <div class="item item-divider">
+            Gráfica de consumo mensual
+        </div>
+    <div class="item item-text-wrap">
+       	<canvas id="demoGraph01" class="chart chart-bar" chart-data="invoiceChart.data" chart-labels="invoiceChart.labels" chart-options='invoiceChart.options' colours='invoiceChart.colours' />
+    </div>
+    
+</div>

@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+<div class='mdgTab'>
+	<div class='row'>
+		<div class='col title'>Dispositivos asociados: </div>
+	</div>
+	<div class='row'>
+		<div class='fname col col-10-sm'>{{mdgUserInfo.tipodocumento}}:</div><div class='col'>{{mdgUserInfo.numerodocumento }}</div>
+	</div>	
+	<div class='row'>
+		<div class='fname col col-10-sm'>Nombre:</div><div class='col'>{{mdgUserInfo.nombre}} {{mdgUserInfo.denominacionsocialapellidos }}</div>
+	</div>	
+	<div class='row'>
+		<div class='fname col col-10-sm'>Fecha nacimiento:</div><div class='col'>{{mdgUserInfo.fechanacimiento.split("T")[0] }}</div>
+	</div>
+	<div class='row'>
+		<div class='fname col col-10-sm'>Email:</div><div class='col'>{{mdgUserInfo.email.toLowerCase() }}</div>
+	</div>	
+	<div class='row' ng-if='mdgData.tiposocioprogramapuntos == "SOCIO"'>
+		<div class='fname col col-50-sm'>Puntos acumulados del Programa:</div><div class='col'>{{mdgUserInfo.puntostotalsocio }}</div>
+	</div>	
+	<div class='title'>Datos postales:</div>
+		<div class='row'>
+		<div class='fname col col-10-sm'>{{mdgUserAddress.tipoVia}}:</div>
+		<div class='col'>
+			<span>{{mdgUserAddress.direccion}} {{mdgUserAddress.numero}} </span>
+			<span ng-if='mdgUserAddress.escalera != null'>{{mdgUserAddress.escalera }}</span>
+			<span ng-if='mdgUserAddress.piso != null'>{{mdgUserAddress.piso}} </span>
+			<span ng-if='mdgUserAddress.puerta != null'>{{mdgUserAddress.puerta}}</span>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='fname col col-10-sm'>Localidad:</div><div class='col'>{{mdgUserAddress.localidad}}</div>
+	</div>
+		<div class='row'>
+		<div class='fname col col-10-sm'>Provincia:</div><div class='col'>{{mdgUserAddress.codigoPostal}}-{{mdgUserAddress.provincia}} ({{mdgUserAddress.pais}})</div>
+	</div>
+</div>

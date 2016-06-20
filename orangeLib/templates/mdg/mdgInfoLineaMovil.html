@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+
+<div class="profileTab">
+	<div class="row">
+		<div class="fname col col-33">MSISDN</div>
+		<div class="col col-50">{{lineInfo.msisdn}}</div>
+	</div>
+	<div class="row">
+		<div class="fname col col-33">Tipo contrato:</div>
+		<div class="col col-50">{{lineInfo.tipocontrato}}</div>
+	</div>
+
+
+	<div ng-repeat="prepago in lineInfo.lineasprepago">
+		<div class="row">
+			<div class="fname col col-33">Estado</div>
+			<div class="col col-50">{{prepago.estadolineaprepago}}</div>
+		</div>
+	</div>
+
+	<div ng-repeat="pospago in lineInfo.lineaspospago" class="lineInfoTables">
+		<div class="row">	
+			<div class="col col-50">Estado:
+					<span ng-show="pospago.estadolineapospago == 'ACTIVO'" class="icon ion-checkmark-round"></span>
+                    <span ng-show="pospago.estadolineapospago != 'ACTIVO'" class="icon ion-close-round"></span>
+			</div>
+			<div class="col col-50">Activo desde: 
+				<span class="grey">{{pospago.fechaactivacionlineapospago| dateESP}}</span> 
+			</div>
+		</div>
+		
+		<div class="row-sm">
+			<div class="sepShadow col-50-md">
+				<h2 class="item clickable" ng-click="showContadores=!showContadores">Ver contadores de consumo <span class="icon ion-chevron-down"></span></h2>
+				<table ng-show="showContadores" ng-repeat="i in pospago.contadores" class="twoColumnsTable">
+					<tr ng-repeat="(cName, value) in i">
+							<td>{{ cName }}</td>
+							<td>{{ value | dateESP | unlimitedCounter }}</td>
+					</tr>
+				</table>
+			</div>
+			<div class="sepShadow col-50-md">
+				<h2 class="item clickable" ng-click="showServicios = !showServicios">Ver servicios contratados <span class="icon ion-chevron-down"></span></h2>		
+				<table ng-show="showServicios" class="twoColumnsTable" >
+				   <tr ng-repeat="sCon in pospago.servicioscontratados">
+						<td>{{sCon.identificador}}</td>
+						<td>{{sCon.fechaactivacion |dateESP}}</td>
+					</tr>	
+				</table>
+			</div>
+		</div>
+	</div>	
+	
+</div>
+
+<div class="mdgTab"></div>

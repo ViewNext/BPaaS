@@ -1,0 +1,153 @@
+<style>
+/* *********************** */
+/*         PROFILE         */
+/* *********************** */
+
+.profileTab {
+    margin: 2rem auto 0;
+    background-color: rgb(251, 251, 251);
+    box-shadow: inset 0 0 0 1rem #F5F5F5, inset -0.3rem -0.3rem .3rem .9rem #E6E6E6;
+    font-size: 13px;
+    padding: 1rem 2rem 2rem;
+    border-radius: 5px;
+}
+.profileTab:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 85px;
+    position: absolute;
+    top: 0.3rem; left: 1rem;
+    background-image: url('../images/clip.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+} 
+.profileTab .title {
+    margin-left: .5rem;
+    padding-left: 1.8rem;
+    color: #AAAAAA;
+    text-shadow: 1px 1px 1px #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;    
+    line-height: 1.5rem;
+}
+.profileTab .title p{ 
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.profileTab img.logo {
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    margin: 1rem auto .5rem;
+    margin-top: 1rem;
+}
+.col.title strong{
+    min-width: 11rem;
+    min-height: 2rem;
+    display: inline-block;
+    margin: .5rem 0 0 0;
+    padding: .65rem;
+    background-color: #ECECEC;
+    border-radius: .3rem;
+    box-shadow: inset -0.1rem -0.1rem .1rem .05rem #EAEAEA, inset .1rem .1rem .1rem #BFBFBF;
+    color:  #4C4C4C;
+    font-size: 22px;
+    text-align: center;
+}
+
+.profileForm .row.rowInput{
+    padding: .25rem .5rem;
+    background-color: #f5f5f5;
+    margin: .5rem 0;
+    border-radius: .3rem;
+}  
+.profileForm .col.ng-binding {
+    min-height: 1.5rem;
+    padding: 0.7rem .5rem .2rem;
+    border-radius: 4px;
+    background-color: #FDFDFD;
+    box-shadow: inset -0.12rem -0.08rem .06rem 0rem #E4E2E2;
+}
+
+.profileLines .col {
+    border: 1px #FFD799 solid;
+    overflow: hidden;
+} 
+
+.profileLines.header .col { 
+    background-color: #FF6700;
+    color: #fff;
+    font-weight: bold; 
+    font-size: 105%;
+}
+.colData {
+    padding: 5px;
+    background-color: rgb(211, 243, 211);
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+.profileLines.dataLine .col {
+    background-color: #FDEFD7;
+}
+.profileContract p {
+    font-size: 1.15rem;
+}
+
+</style>
+<meta charset="UTF-8">
+
+<div class="profileTab">
+	<div class="profileForm">
+		<!--div class="row">
+			<div class="col title"><p> Perfil de usuario para MSISDN:</p><p><strong>{{ msisdn }}</strong></p></div>
+		</div-->
+		<div class="row rowInput">
+			<div class="col col-20-sm"><p class="fname">Nombre</p></div><div class="col">{{ perfil.user.firstName}} {{ perfil.user.lastName}}</div>
+		</div>
+		<div class="row rowInput">
+			<div class="col col-20-sm"><p class="fname">Customer ID</p></div><div class="col">{{ perfil.user.customerId }}</div>
+		</div>
+		<div class="row rowInput">
+			<div class="col col-20-sm"><p class="fname">NIF/DNI</p></div><div class="col">{{ perfil.user.identityNum }}</div>
+		</div>	
+	</div>
+	
+	<!-- area de contratos -->
+	<div ng-show="showProfileDetails" class="profileContract" ng-repeat="contrato in perfil.contract">
+		<div class="row">
+			<div class="col col-50">
+				<p><span class="textGrey">Contrato:</span> {{ contrato.contractId }}</p>
+			</div>
+			<div class="col col-50">
+				<p><span class="textGrey">Fecha:</span> {{ contrato.activationDate | dateESP }}</p>
+			</div>
+		</div>
+		<table>
+			<thead>
+				<tr>
+					<th>MSISDN</th>
+					<th>Tipo</th>
+					<th>Tarifa voz</th>
+					<th>Tarifa datos</th>
+					<th>Segmento</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="profileLines dataLine tdCenter" ng-repeat="linea in perfil.lineas" ng-click='selectLinea(linea.msisdn)'>
+					<td>{{ linea.msisdn }}</td>
+					<td>{{ contrato.lineArray[0].partyType }}</td>
+					<td ng-bind-html="contrato.lineArray[0].voiceRatePlan | html"></td>
+					<td ng-bind-html="contrato.lineArray[0].dataRatePlan | html">td>
+					<td>{{ contrato.lineArray[0].segment }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+</div>
+<script>
+
+
+</script>

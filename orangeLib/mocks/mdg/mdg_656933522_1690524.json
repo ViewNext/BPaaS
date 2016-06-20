@@ -1,0 +1,1383 @@
+{
+	"cliente": {
+		"numerodocumento": "53013554A",
+		"tipoclienteconv": "BIEQUIPADO",
+		"lineasmovil": 5,
+		"lineasfijo": 1,
+		"impagofijo": false,
+		"impagomovil": false,
+		"tipoclientefijo": "RESIDENCIAL",
+		"tipoclientemovil": "RESIDENCIAL",
+		"lineasfijoorange": false,
+		"clientebiequipado": "SI",
+		"clienteMovil": {
+			"numerodocumento": "53013554A",
+			"tipodocumento": "NIF",
+			"tipocliente": "RESIDENCIAL",
+			"subtipocliente": "INDIVIDUO",
+			"segmentovalor": "RES 4",
+			"denominacionsocialapellidos": "SANCHEZ GONZALEZ",
+			"nombre": "GERMAN",
+			"fechanacimiento": "1979-07-05T00:00:00.0+0200",
+			"email": "GERMAN.SANCHEZGONZALEZ@ORANGE.COM",
+			"emailconfirmado": null,
+			"tiposocioprogramapuntos": "SOCIO",
+			"impagoctemov": "NO",
+			"fraudectemov": "NO",
+			"clientebiequipado": null,
+			"puntostotalsocio": 329,
+			"numlineasmovil": 0,
+			"numtelefonoprincipal": 34656161296,
+			"clientemigrado": "NO",
+			"direccppal": {
+				"1-25AI-640": {
+					"tipoVia": "CALLE",
+					"direccion": "ISLA DE LOBEIRA",
+					"numero": "106",
+					"escalera": null,
+					"piso": "3",
+					"puerta": "F",
+					"localidad": "COLLADO VILLALBA",
+					"provincia": "MADRID",
+					"codigoPostal": "28400",
+					"pais": "ESPAÑA"
+				}
+			},
+			"cuentas": {
+				"9381782": {
+					"customerid": "9381782",
+					"tipocuenta": "RESIDENCIAL",
+					"subtipocuenta": null,
+					"segmentovalor": "RES 4",
+					"denominacionsocialapellidos": "SANCHEZ GONZALEZ",
+					"nombre": "GERMAN",
+					"importeultimafactura": 13.69,
+					"ciclofacturacion": "21",
+					"facturaonline": "NO",
+					"impagodeuda": 0,
+					"prgcode": "POSTRESD",
+					"custcode": "1.19373440",
+					"idfactura": "A500037966950516",
+					"tipofactura": "Papel + det",
+					"cuentamigrada": "NO",
+					"facturaunica": "NO",
+					"tarifaexpedit": "NO",
+					"idcuentafijo": null,
+					"estadoupsizeexpedit": "NO",
+					"direccfact": {
+						"9381782": {
+							"tipoVia": "CALLE",
+							"direccion": "ISLA DE LOBEIRA",
+							"numero": "106",
+							"escalera": "5",
+							"piso": "3",
+							"puerta": "F",
+							"localidad": "COLLADO VILLALBA",
+							"provincia": "MADRID",
+							"codigoPostal": "28400",
+							"pais": "ESPAÑA"
+						}
+					},
+					"contratos": {
+						"607202300": {
+							"coid": 23179348,
+							"msisdn": "607202300",
+							"tipocontrato": "POSPAGO",
+							"codigopuk1": "84511451",
+							"hotline": "NO",
+							"combinayahorra": "NO",
+							"tranquilidadorange": "NO",
+							"orangecloudactivo": null,
+							"puntossociolinea": 0,
+							"mifijo": "NO",
+							"numeromifijoasociado": 0,
+							"lineasprepago": {},
+							"lineaspospago": {
+								"23179348": {
+									"estadolineapospago": "ACTIVO",
+									"fechaactivacionlineapospago": "2006-02-16T03:01:22.0+0100",
+									"tarifatmcode": "TARSV",
+									"paquetedatosspcode": "DTOC",
+									"consumoadicional": 0,
+									"contadores": {
+										"TARSV": {
+											"tipo": "TARIFA",
+											"codigooc": "TARSV",
+											"minutosconsumidos": 0,
+											"smsconsumidos": 0,
+											"nbloquesminutosflex": -1,
+											"bloqueiniciominutosflex": -1,
+											"tamanobloqueminutosflex": -1,
+											"minutostotales": 1000,
+											"smstotales": 99999,
+											"fechacontador": "2014-11-23T04:02:46.0+0100",
+											"megasconsumidos": -1,
+											"megastotales": -1,
+											"nbloquesmegasflex": -1,
+											"bloqueiniciomegasflex": -1,
+											"tamanobloquemegasflex": -1,
+											"umbralmegasmaximo": 0
+										}
+									},
+									"modulosahorro": {},
+									"servicioscontratados": {
+										"1": {
+											"identificador": "SCNFC",
+											"fechaactivacion": "2015-07-19T00:00:00.0+0200"
+										},
+										"2": {
+											"identificador": "RESMS",
+											"fechaactivacion": "2014-02-27T00:00:00.0+0100"
+										},
+										"3": {
+											"identificador": "INFO",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"4": {
+											"identificador": "CUOTA",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"5": {
+											"identificador": "TDAT",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"6": {
+											"identificador": "CRET",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"7": {
+											"identificador": "RETLL",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"8": {
+											"identificador": "ENMMS",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"9": {
+											"identificador": "APNEU",
+											"fechaactivacion": "2014-06-25T00:00:00.0+0200"
+										},
+										"10": {
+											"identificador": "BVOZ",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"11": {
+											"identificador": "IDNUM",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"12": {
+											"identificador": "OCNUM",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"13": {
+											"identificador": "BLLUS",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"14": {
+											"identificador": "BCKCO",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"15": {
+											"identificador": "EMGCA",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"16": {
+											"identificador": "LLESP",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"17": {
+											"identificador": "FACT",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"18": {
+											"identificador": "VDLLU",
+											"fechaactivacion": "2014-02-27T00:00:00.0+0100"
+										},
+										"19": {
+											"identificador": "DESVL",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"20": {
+											"identificador": "MCONF",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"21": {
+											"identificador": "B903",
+											"fechaactivacion": "2016-02-01T00:00:00.0+0100"
+										},
+										"22": {
+											"identificador": "SPOST",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"23": {
+											"identificador": "BUMTS",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"24": {
+											"identificador": "APNW",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"25": {
+											"identificador": "SCMPT",
+											"fechaactivacion": "2016-02-12T00:00:00.0+0100"
+										},
+										"26": {
+											"identificador": "ENSMS",
+											"fechaactivacion": "2014-02-27T00:00:00.0+0100"
+										},
+										"27": {
+											"identificador": "B906",
+											"fechaactivacion": "2016-02-01T00:00:00.0+0100"
+										},
+										"28": {
+											"identificador": "DBVOZ",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"29": {
+											"identificador": "BEARG",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"30": {
+											"identificador": "EVENT",
+											"fechaactivacion": "2014-02-27T00:00:00.0+0100"
+										},
+										"31": {
+											"identificador": "TEL",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"32": {
+											"identificador": "PFME",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"33": {
+											"identificador": "GPDUR",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										},
+										"34": {
+											"identificador": "COC0",
+											"fechaactivacion": "2013-09-25T00:00:00.0+0200"
+										}
+									},
+									"numerosmartsims": 0
+								}
+							},
+							"promociones": {
+								"1": {
+									"codigopromocion": "RTND1",
+									"fechaactivacion": "2006-07-21T00:00:00.0+0200"
+								},
+								"2": {
+									"codigopromocion": "MMS30",
+									"fechaactivacion": "2004-12-21T00:00:00.0+0100"
+								},
+								"3": {
+									"codigopromocion": "MMS30",
+									"fechaactivacion": "2010-09-17T00:00:00.0+0200"
+								},
+								"4": {
+									"codigopromocion": "SMS30",
+									"fechaactivacion": "2004-04-21T00:00:00.0+0200"
+								},
+								"5": {
+									"codigopromocion": "SMS30",
+									"fechaactivacion": "2006-09-12T00:00:00.0+0200"
+								},
+								"6": {
+									"codigopromocion": "GPRTO",
+									"fechaactivacion": "2004-12-01T00:00:00.0+0100"
+								},
+								"7": {
+									"codigopromocion": "BORES",
+									"fechaactivacion": "2005-08-21T00:00:00.0+0200"
+								},
+								"8": {
+									"codigopromocion": "D30PT",
+									"fechaactivacion": "2007-10-21T00:00:00.0+0200"
+								},
+								"9": {
+									"codigopromocion": "FDFCC",
+									"fechaactivacion": "2010-08-21T00:00:00.0+0200"
+								},
+								"10": {
+									"codigopromocion": "FDFCC",
+									"fechaactivacion": "2010-08-21T00:00:00.0+0200"
+								},
+								"11": {
+									"codigopromocion": "FDFCC",
+									"fechaactivacion": "2010-08-21T00:00:00.0+0200"
+								},
+								"12": {
+									"codigopromocion": "PEPMG",
+									"fechaactivacion": "2011-07-21T00:00:00.0+0200"
+								},
+								"13": {
+									"codigopromocion": "DESIS",
+									"fechaactivacion": "2013-06-21T12:00:00.0+0200"
+								},
+								"14": {
+									"codigopromocion": "DESIS",
+									"fechaactivacion": "2013-07-25T00:00:00.0+0200"
+								},
+								"15": {
+									"codigopromocion": "DFTAV",
+									"fechaactivacion": "2012-02-22T00:00:00.0+0100"
+								},
+								"16": {
+									"codigopromocion": "DFTAV",
+									"fechaactivacion": "2013-02-06T00:00:00.0+0100"
+								},
+								"17": {
+									"codigopromocion": "COC1",
+									"fechaactivacion": "2012-11-13T16:35:23.0+0100"
+								},
+								"18": {
+									"codigopromocion": "COC2C",
+									"fechaactivacion": "2012-11-12T17:12:11.0+0100"
+								},
+								"19": {
+									"codigopromocion": "COC2C",
+									"fechaactivacion": "2012-10-17T12:00:00.0+0200"
+								},
+								"20": {
+									"codigopromocion": "DACL1",
+									"fechaactivacion": "2013-11-26T12:34:27.0+0100"
+								},
+								"21": {
+									"codigopromocion": "DACL1",
+									"fechaactivacion": "2016-02-04T13:52:14.0+0100"
+								}
+							},
+							"dispositivosasociados": {
+								"1": {
+									"marca": "APPLE",
+									"modelo": "IPHONE 4",
+									"cod_sap": null
+								}
+							},
+							"fechainiciovap": "2015-12-04T05:16:21.0+0100",
+							"fechafinvap": "2017-12-04T05:16:21.0+0100",
+							"cpmovil": {
+								"1": {
+									"codigo": "CPC3",
+									"descripcion": "Compromiso de permanencia de 24 meses %CPC3%",
+									"penalizacion": 25,
+									"fechavencimiento": "2017-12-03T00:00:00.0+0100"
+								}
+							},
+							"fechafincptarifa": "2017-12-03T00:00:00.0+0100",
+							"fechafincpoperador": null,
+							"bonovelflex": "N"
+						},
+						"622331152": {
+							"coid": 58126744,
+							"msisdn": "622331152",
+							"tipocontrato": "PREPAGO",
+							"codigopuk1": "56910001",
+							"hotline": "NO",
+							"combinayahorra": "NO",
+							"tranquilidadorange": "NO",
+							"orangecloudactivo": null,
+							"puntossociolinea": 329,
+							"mifijo": "NO",
+							"numeromifijoasociado": 0,
+							"lineasprepago": {
+								"58126744": {
+									"estadolineaprepago": "ActiveIntLow",
+									"fechaaltaactivacionsimprepago": "2016-01-20T08:01:48.0+0100",
+									"fechacaducidadsimprepago": "2017-02-20T08:01:48.0+0100",
+									"saldopromocionalprepago": 0,
+									"fechacaducidadsaldopromocional": null,
+									"codigotarifa": "P70",
+									"saldoprepago": 5.28,
+									"fechaultimarecarga": null,
+									"contadores": {},
+									"modulosahorro": {
+										"1": {
+											"identificador": "TAORD",
+											"fechaactivacion": "2016-01-29T11:04:05.0+0100"
+										}
+									},
+									"servicioscontratados": {
+										"1": {
+											"identificador": "803/806/8070-5/118",
+											"fechaactivacion": "2016-01-20T08:01:48.0+0100"
+										},
+										"2": {
+											"identificador": "PCK",
+											"fechaactivacion": "2016-01-20T08:01:48.0+0100"
+										},
+										"3": {
+											"identificador": "GPRS",
+											"fechaactivacion": "2016-01-20T08:01:48.0+0100"
+										},
+										"4": {
+											"identificador": "SMSMMSgrupo2",
+											"fechaactivacion": "2016-01-20T08:01:48.0+0100"
+										},
+										"5": {
+											"identificador": "SMSMMSgrupo3",
+											"fechaactivacion": "2016-01-20T08:01:48.0+0100"
+										},
+										"6": {
+											"identificador": "SMSMMSgrupo7",
+											"fechaactivacion": "2016-01-20T08:01:48.0+0100"
+										},
+										"7": {
+											"identificador": "SMSMMSgrupo9",
+											"fechaactivacion": "2016-01-20T08:01:48.0+0100"
+										},
+										"8": {
+											"identificador": "SMSMMStodos",
+											"fechaactivacion": "2016-01-20T08:01:48.0+0100"
+										}
+									},
+									"idcontrato": "58126744"
+								}
+							},
+							"lineaspospago": {},
+							"promociones": {},
+							"dispositivosasociados": {
+								"1": {
+									"marca": "APPLE",
+									"modelo": "IPHONE 4",
+									"cod_sap": null
+								}
+							},
+							"fechainiciovap": null,
+							"fechafinvap": null,
+							"cpmovil": {},
+							"fechafincptarifa": null,
+							"fechafincpoperador": null,
+							"bonovelflex": "N"
+						},
+						"656933522": {
+							"coid": 18492617,
+							"msisdn": "656933522",
+							"tipocontrato": "POSPAGO",
+							"codigopuk1": "51235394",
+							"hotline": "NO",
+							"combinayahorra": "NO",
+							"tranquilidadorange": "SI",
+							"orangecloudactivo": " Orange Cloud 25GB",
+							"puntossociolinea": 0,
+							"mifijo": "NO",
+							"numeromifijoasociado": 0,
+							"lineasprepago": {},
+							"lineaspospago": {
+								"18492617": {
+									"estadolineapospago": "ACTIVO",
+									"fechaactivacionlineapospago": "2004-12-03T20:04:41.0+0100",
+									"tarifatmcode": "DYY14",
+									"paquetedatosspcode": "DYYNV",
+									"consumoadicional": 0,
+									"contadores": {
+										"DYY14": {
+											"tipo": "TARIFAFLEX",
+											"codigooc": "DYY14",
+											"minutosconsumidos": 0,
+											"smsconsumidos": -1,
+											"nbloquesminutosflex": -1,
+											"bloqueiniciominutosflex": -1,
+											"tamanobloqueminutosflex": -1,
+											"minutostotales": 9000,
+											"smstotales": -1,
+											"fechacontador": "2016-05-22T19:52:46.0+0200",
+											"megasconsumidos": 5,
+											"megastotales": -1,
+											"nbloquesmegasflex": 0,
+											"bloqueiniciomegasflex": 3072,
+											"tamanobloquemegasflex": 100,
+											"umbralmegasmaximo": 0
+										}
+									},
+									"modulosahorro": {
+										"1": {
+											"identificador": "MOC1B",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"2": {
+											"identificador": "MCLO1",
+											"fechaactivacion": "2016-02-04T00:00:00.0+0100"
+										}
+									},
+									"servicioscontratados": {
+										"1": {
+											"identificador": "ENMMS",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"2": {
+											"identificador": "RLLIT",
+											"fechaactivacion": "2016-04-07T00:00:00.0+0200"
+										},
+										"3": {
+											"identificador": "APNM",
+											"fechaactivacion": "2016-02-15T00:00:00.0+0100"
+										},
+										"4": {
+											"identificador": "EMGCA",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"5": {
+											"identificador": "B903",
+											"fechaactivacion": "2016-02-09T00:00:00.0+0100"
+										},
+										"6": {
+											"identificador": "LLESP",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"7": {
+											"identificador": "B906",
+											"fechaactivacion": "2016-02-09T00:00:00.0+0100"
+										},
+										"8": {
+											"identificador": "RETLL",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"9": {
+											"identificador": "MCONF",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"10": {
+											"identificador": "GPDUR",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"11": {
+											"identificador": "SOC1B",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"12": {
+											"identificador": "CRET",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"13": {
+											"identificador": "VDLLU",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"14": {
+											"identificador": "TDAT",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"15": {
+											"identificador": "SCMPT",
+											"fechaactivacion": "2016-03-01T00:00:00.0+0100"
+										},
+										"16": {
+											"identificador": "BVOZ",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"17": {
+											"identificador": "BINET",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"18": {
+											"identificador": "PFME",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"19": {
+											"identificador": "IDNUM",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"20": {
+											"identificador": "BCKCO",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"21": {
+											"identificador": "TEL",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"22": {
+											"identificador": "INFO",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"23": {
+											"identificador": "CUOTA",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"24": {
+											"identificador": "SPOST",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"25": {
+											"identificador": "GPRS",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"26": {
+											"identificador": "RESMS",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"27": {
+											"identificador": "DESVL",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"28": {
+											"identificador": "APNW",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"29": {
+											"identificador": "LTET",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"30": {
+											"identificador": "NCCL1",
+											"fechaactivacion": "2016-02-04T00:00:00.0+0100"
+										},
+										"31": {
+											"identificador": "ENSMS",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"32": {
+											"identificador": "BLLUS",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"33": {
+											"identificador": "BUMTS",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"34": {
+											"identificador": "SLTE",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"35": {
+											"identificador": "OCNUM",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"36": {
+											"identificador": "APNEU",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"37": {
+											"identificador": "FACT",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"38": {
+											"identificador": "DBVOZ",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"39": {
+											"identificador": "BEARG",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"40": {
+											"identificador": "EVENT",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										},
+										"41": {
+											"identificador": "COC1B",
+											"fechaactivacion": "2015-02-06T00:00:00.0+0100"
+										}
+									},
+									"numerosmartsims": 0
+								}
+							},
+							"promociones": {
+								"1": {
+									"codigopromocion": "RTND1",
+									"fechaactivacion": "2006-07-21T00:00:00.0+0200"
+								},
+								"2": {
+									"codigopromocion": "MMS30",
+									"fechaactivacion": "2004-12-21T00:00:00.0+0100"
+								},
+								"3": {
+									"codigopromocion": "MMS30",
+									"fechaactivacion": "2010-09-17T00:00:00.0+0200"
+								},
+								"4": {
+									"codigopromocion": "SMS30",
+									"fechaactivacion": "2004-04-21T00:00:00.0+0200"
+								},
+								"5": {
+									"codigopromocion": "SMS30",
+									"fechaactivacion": "2006-09-12T00:00:00.0+0200"
+								},
+								"6": {
+									"codigopromocion": "GPRTO",
+									"fechaactivacion": "2004-12-01T00:00:00.0+0100"
+								},
+								"7": {
+									"codigopromocion": "BORES",
+									"fechaactivacion": "2005-08-21T00:00:00.0+0200"
+								},
+								"8": {
+									"codigopromocion": "D30PT",
+									"fechaactivacion": "2007-10-21T00:00:00.0+0200"
+								},
+								"9": {
+									"codigopromocion": "FDFCC",
+									"fechaactivacion": "2010-08-21T00:00:00.0+0200"
+								},
+								"10": {
+									"codigopromocion": "FDFCC",
+									"fechaactivacion": "2010-08-21T00:00:00.0+0200"
+								},
+								"11": {
+									"codigopromocion": "FDFCC",
+									"fechaactivacion": "2010-08-21T00:00:00.0+0200"
+								},
+								"12": {
+									"codigopromocion": "PEPMG",
+									"fechaactivacion": "2011-07-21T00:00:00.0+0200"
+								},
+								"13": {
+									"codigopromocion": "DESIS",
+									"fechaactivacion": "2013-06-21T12:00:00.0+0200"
+								},
+								"14": {
+									"codigopromocion": "DESIS",
+									"fechaactivacion": "2013-07-25T00:00:00.0+0200"
+								},
+								"15": {
+									"codigopromocion": "DFTAV",
+									"fechaactivacion": "2012-02-22T00:00:00.0+0100"
+								},
+								"16": {
+									"codigopromocion": "DFTAV",
+									"fechaactivacion": "2013-02-06T00:00:00.0+0100"
+								},
+								"17": {
+									"codigopromocion": "COC1",
+									"fechaactivacion": "2012-11-13T16:35:23.0+0100"
+								},
+								"18": {
+									"codigopromocion": "COC2C",
+									"fechaactivacion": "2012-11-12T17:12:11.0+0100"
+								},
+								"19": {
+									"codigopromocion": "COC2C",
+									"fechaactivacion": "2012-10-17T12:00:00.0+0200"
+								},
+								"20": {
+									"codigopromocion": "DACL1",
+									"fechaactivacion": "2013-11-26T12:34:27.0+0100"
+								},
+								"21": {
+									"codigopromocion": "DACL1",
+									"fechaactivacion": "2016-02-04T13:52:14.0+0100"
+								}
+							},
+							"dispositivosasociados": {
+								"1": {
+									"marca": "APPLE",
+									"modelo": "IPHONE 5",
+									"cod_sap": "3010233"
+								}
+							},
+							"fechainiciovap": "2015-02-07T03:27:41.0+0100",
+							"fechafinvap": "2017-02-07T03:27:41.0+0100",
+							"cpmovil": {
+								"1": {
+									"codigo": "CPC3",
+									"descripcion": "Compromiso de permanencia de 24 meses %CPC3%",
+									"penalizacion": 25,
+									"fechavencimiento": "2017-02-06T00:00:00.0+0100"
+								}
+							},
+							"fechafincptarifa": "2017-02-06T00:00:00.0+0100",
+							"fechafincpoperador": null,
+							"bonovelflex": "Y"
+						},
+						"658923678": {
+							"coid": 67392958,
+							"msisdn": "658923678",
+							"tipocontrato": "PREPAGO",
+							"codigopuk1": "31961885",
+							"hotline": "NO",
+							"combinayahorra": "NO",
+							"tranquilidadorange": "NO",
+							"orangecloudactivo": null,
+							"puntossociolinea": 0,
+							"mifijo": "NO",
+							"numeromifijoasociado": 0,
+							"lineasprepago": {
+								"67392958": {
+									"estadolineaprepago": "ActiveIntLow",
+									"fechaaltaactivacionsimprepago": "2015-03-25T16:07:22.0+0100",
+									"fechacaducidadsimprepago": "2017-04-15T10:36:21.0+0200",
+									"saldopromocionalprepago": 0,
+									"fechacaducidadsaldopromocional": null,
+									"codigotarifa": "P70",
+									"saldoprepago": 5.67,
+									"fechaultimarecarga": null,
+									"contadores": {
+										"P70": {
+											"tipo": "TARIFA",
+											"codigooc": "P70",
+											"minutosconsumidos": -1,
+											"smsconsumidos": 1,
+											"nbloquesminutosflex": -1,
+											"bloqueiniciominutosflex": -1,
+											"tamanobloqueminutosflex": -1,
+											"minutostotales": -1,
+											"smstotales": 5,
+											"fechacontador": "2015-09-04T13:23:38.0+0200",
+											"megasconsumidos": 0,
+											"megastotales": -1,
+											"nbloquesmegasflex": -1,
+											"bloqueiniciomegasflex": -1,
+											"tamanobloquemegasflex": -1,
+											"umbralmegasmaximo": 0
+										}
+									},
+									"modulosahorro": {},
+									"servicioscontratados": {
+										"1": {
+											"identificador": "803/806/8070-5/118",
+											"fechaactivacion": "2015-03-25T16:07:21.0+0100"
+										},
+										"2": {
+											"identificador": "PCK",
+											"fechaactivacion": "2015-03-25T16:07:21.0+0100"
+										},
+										"3": {
+											"identificador": "GPRS",
+											"fechaactivacion": "2015-03-25T16:07:21.0+0100"
+										},
+										"4": {
+											"identificador": "SMSMMSgrupo2",
+											"fechaactivacion": "2015-03-25T16:07:21.0+0100"
+										},
+										"5": {
+											"identificador": "WAP",
+											"fechaactivacion": "2015-03-25T16:07:21.0+0100"
+										},
+										"6": {
+											"identificador": "MMS",
+											"fechaactivacion": "2015-03-25T16:07:21.0+0100"
+										},
+										"7": {
+											"identificador": "APN_INTERNET",
+											"fechaactivacion": "2015-03-25T16:07:21.0+0100"
+										},
+										"8": {
+											"identificador": "SMSMMSgrupo3",
+											"fechaactivacion": "2015-03-25T16:07:21.0+0100"
+										},
+										"9": {
+											"identificador": "SMSMMSgrupo7",
+											"fechaactivacion": "2015-03-25T16:07:21.0+0100"
+										},
+										"10": {
+											"identificador": "SMSMMSgrupo9",
+											"fechaactivacion": "2015-03-25T16:07:21.0+0100"
+										},
+										"11": {
+											"identificador": "SMSMMStodos",
+											"fechaactivacion": "2015-03-25T16:07:21.0+0100"
+										}
+									},
+									"idcontrato": "67392958"
+								}
+							},
+							"lineaspospago": {},
+							"promociones": {},
+							"dispositivosasociados": {
+								"1": {
+									"marca": "ORANGE",
+									"modelo": "Daytona (Huawei G510)",
+									"cod_sap": "3030482"
+								}
+							},
+							"fechainiciovap": null,
+							"fechafinvap": null,
+							"cpmovil": {},
+							"fechafincptarifa": null,
+							"fechafincpoperador": null,
+							"bonovelflex": "N"
+						},
+						"665763163": {
+							"coid": 29794603,
+							"msisdn": "665763163",
+							"tipocontrato": "POSPAGO",
+							"codigopuk1": "57221103",
+							"hotline": "NO",
+							"combinayahorra": "NO",
+							"tranquilidadorange": "NO",
+							"orangecloudactivo": null,
+							"puntossociolinea": 0,
+							"mifijo": "NO",
+							"numeromifijoasociado": 0,
+							"lineasprepago": {},
+							"lineaspospago": {
+								"29794603": {
+									"estadolineapospago": "ACTIVO",
+									"fechaactivacionlineapospago": "2007-10-05T13:08:47.0+0200",
+									"tarifatmcode": "TARDI",
+									"paquetedatosspcode": "PARDD",
+									"consumoadicional": 0,
+									"contadores": {
+										"TARDI": {
+											"tipo": "TARIFAFLEX",
+											"codigooc": "TARDI",
+											"minutosconsumidos": 0,
+											"smsconsumidos": -1,
+											"nbloquesminutosflex": -1,
+											"bloqueiniciominutosflex": -1,
+											"tamanobloqueminutosflex": -1,
+											"minutostotales": 1000,
+											"smstotales": -1,
+											"fechacontador": "2015-05-21T07:44:49.0+0200",
+											"megasconsumidos": -1,
+											"megastotales": -1,
+											"nbloquesmegasflex": 0,
+											"bloqueiniciomegasflex": 500,
+											"tamanobloquemegasflex": 100,
+											"umbralmegasmaximo": 0
+										}
+									},
+									"modulosahorro": {},
+									"servicioscontratados": {
+										"1": {
+											"identificador": "TEL",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"2": {
+											"identificador": "TDAT",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"3": {
+											"identificador": "CUOTA",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"4": {
+											"identificador": "BINET",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"5": {
+											"identificador": "BVOZ",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"6": {
+											"identificador": "OCNUM",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"7": {
+											"identificador": "SLTE",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"8": {
+											"identificador": "LLESP",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"9": {
+											"identificador": "IDNUM",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"10": {
+											"identificador": "INFO",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"11": {
+											"identificador": "SPOST",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"12": {
+											"identificador": "APNEU",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"13": {
+											"identificador": "RESMS",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"14": {
+											"identificador": "ENSMS",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"15": {
+											"identificador": "RETLL",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"16": {
+											"identificador": "APNM",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"17": {
+											"identificador": "EVENT",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"18": {
+											"identificador": "GPDUR",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"19": {
+											"identificador": "SCMPT",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"20": {
+											"identificador": "COC0",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"21": {
+											"identificador": "DESVL",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"22": {
+											"identificador": "MCONF",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"23": {
+											"identificador": "DBVOZ",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"24": {
+											"identificador": "BUMTS",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"25": {
+											"identificador": "EMGCA",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"26": {
+											"identificador": "FACT",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"27": {
+											"identificador": "GPRS",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"28": {
+											"identificador": "BEARG",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"29": {
+											"identificador": "CRET",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"30": {
+											"identificador": "PFME",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"31": {
+											"identificador": "APNW",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"32": {
+											"identificador": "BCKCO",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"33": {
+											"identificador": "BLLUS",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"34": {
+											"identificador": "B906",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"35": {
+											"identificador": "VDLLU",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										},
+										"36": {
+											"identificador": "ENMMS",
+											"fechaactivacion": "2016-04-09T00:00:00.0+0200"
+										}
+									},
+									"numerosmartsims": 0
+								}
+							},
+							"promociones": {
+								"1": {
+									"codigopromocion": "RTND1",
+									"fechaactivacion": "2006-07-21T00:00:00.0+0200"
+								},
+								"2": {
+									"codigopromocion": "MMS30",
+									"fechaactivacion": "2004-12-21T00:00:00.0+0100"
+								},
+								"3": {
+									"codigopromocion": "MMS30",
+									"fechaactivacion": "2010-09-17T00:00:00.0+0200"
+								},
+								"4": {
+									"codigopromocion": "SMS30",
+									"fechaactivacion": "2004-04-21T00:00:00.0+0200"
+								},
+								"5": {
+									"codigopromocion": "SMS30",
+									"fechaactivacion": "2006-09-12T00:00:00.0+0200"
+								},
+								"6": {
+									"codigopromocion": "GPRTO",
+									"fechaactivacion": "2004-12-01T00:00:00.0+0100"
+								},
+								"7": {
+									"codigopromocion": "BORES",
+									"fechaactivacion": "2005-08-21T00:00:00.0+0200"
+								},
+								"8": {
+									"codigopromocion": "D30PT",
+									"fechaactivacion": "2007-10-21T00:00:00.0+0200"
+								},
+								"9": {
+									"codigopromocion": "FDFCC",
+									"fechaactivacion": "2010-08-21T00:00:00.0+0200"
+								},
+								"10": {
+									"codigopromocion": "FDFCC",
+									"fechaactivacion": "2010-08-21T00:00:00.0+0200"
+								},
+								"11": {
+									"codigopromocion": "FDFCC",
+									"fechaactivacion": "2010-08-21T00:00:00.0+0200"
+								},
+								"12": {
+									"codigopromocion": "PEPMG",
+									"fechaactivacion": "2011-07-21T00:00:00.0+0200"
+								},
+								"13": {
+									"codigopromocion": "DESIS",
+									"fechaactivacion": "2013-06-21T12:00:00.0+0200"
+								},
+								"14": {
+									"codigopromocion": "DESIS",
+									"fechaactivacion": "2013-07-25T00:00:00.0+0200"
+								},
+								"15": {
+									"codigopromocion": "DFTAV",
+									"fechaactivacion": "2012-02-22T00:00:00.0+0100"
+								},
+								"16": {
+									"codigopromocion": "DFTAV",
+									"fechaactivacion": "2013-02-06T00:00:00.0+0100"
+								},
+								"17": {
+									"codigopromocion": "COC1",
+									"fechaactivacion": "2012-11-13T16:35:23.0+0100"
+								},
+								"18": {
+									"codigopromocion": "COC2C",
+									"fechaactivacion": "2012-11-12T17:12:11.0+0100"
+								},
+								"19": {
+									"codigopromocion": "COC2C",
+									"fechaactivacion": "2012-10-17T12:00:00.0+0200"
+								},
+								"20": {
+									"codigopromocion": "DACL1",
+									"fechaactivacion": "2013-11-26T12:34:27.0+0100"
+								},
+								"21": {
+									"codigopromocion": "DACL1",
+									"fechaactivacion": "2016-02-04T13:52:14.0+0100"
+								}
+							},
+							"dispositivosasociados": {
+								"1": {
+									"marca": "APPLE",
+									"modelo": "IPHONE 4",
+									"cod_sap": null
+								}
+							},
+							"fechainiciovap": null,
+							"fechafinvap": null,
+							"cpmovil": {},
+							"fechafincptarifa": null,
+							"fechafincpoperador": null,
+							"bonovelflex": "C"
+						}
+					},
+					"contadorescuenta": {}
+				}
+			},
+			"facturaunica": "NO"
+		},
+		"clientefijo": {
+			"tipodocumento": "NIF",
+			"tipocliente": "RESIDENCIAL",
+			"segmentovalor": "Particular",
+			"denominacionsocialapellidos": "859969160010666437945902",
+			"nombre": "GERMAN",
+			"fechanacimiento": null,
+			"email": "german.sanchezgonzalez@orange.co",
+			"marcacombinayahorra": "SI",
+			"impagocltefijo": "NO",
+			"fraudectefijo": "NO",
+			"facturaunica": "NO",
+			"direccppal": {
+				"859969160010666437945902": {
+					"tipoVia": "Calle",
+					"direccion": "DE LUGO",
+					"numero": "19",
+					"escalera": " ",
+					"piso": "00",
+					"puerta": " ",
+					"localidad": "ALCOBENDAS",
+					"provincia": "Madrid",
+					"codigoPostal": "28100",
+					"pais": "España"
+				}
+			},
+			"cuentas": {
+				"100000001394857913": {
+					"rbtacctid": "N53012455P0002",
+					"rbtacctno": "213074622",
+					"denominacionsocialapellidos": "SANCHEZ GONZALEZ",
+					"nombre": "GERMAN",
+					"impagoctafijo": "NO",
+					"fraudectefijo": "NO",
+					"importeultimafactura": 13.39,
+					"ciclofacturacion": "1",
+					"impagodeuda": 0,
+					"estadocuenta": "Activa",
+					"facturaunica": "NO",
+					"mayordocemeses": "NO",
+					"fechaaltafacturaunica": null,
+					"idcuentamovil": null,
+					"direccfact": {
+						"213074622": {
+							"tipoVia": "Calle",
+							"direccion": "DE LUGO",
+							"numero": "19",
+							"escalera": " ",
+							"piso": " ",
+							"puerta": " ",
+							"localidad": "ALCOBENDAS",
+							"provincia": "Madrid",
+							"codigoPostal": "28100       ",
+							"pais": "España"
+						}
+					},
+					"contratos": {
+						"1": {
+							"idcontrato": "32247307",
+							"fechaaltalineafija": "2013-02-18T00:00:00.0+0100",
+							"routerfijodescripcion": "Router Livebox 2.1",
+							"routerfijocodinternocatalogo": "EQLB21",
+							"numerotelefonofijo": "910068924",
+							"estadolineafijo": "INSTALADO",
+							"tarifaadsldescripcion": "(C) ADSL Max. Vel. + nueva TV Orange + linea Directo + llam.",
+							"tarifaadslcodmorganeoferta": "ABCMU",
+							"fechaaltalineaadsl": "2014-05-14T00:00:00.0+0200",
+							"estadolineaadsl": "INSTALADO",
+							"direccionemailadsl": "alberto_feiffer2@orange",
+							"orangetv": "SI",
+							"tranquilidadorange": "NO",
+							"compromisospermanencia": {},
+							"direccionserv": {
+								"0171754972": {
+									"tipoVia": "Calle",
+									"direccion": "DE LUGO",
+									"numero": null,
+									"escalera": " ",
+									"piso": " ",
+									"puerta": " ",
+									"localidad": "ALCOBENDAS",
+									"provincia": "Madrid",
+									"codigoPostal": "28100",
+									"pais": "España"
+								}
+							},
+							"productosasociados": {
+								"1": {
+									"productosasociadosid": "0229345882",
+									"fechaaltaproductoasociado": "2014-05-26T00:00:00.0+0200",
+									"estadoproductoasociado": "DESCONECTADO",
+									"descripcion": "Descuento Combina y Ahorra"
+								},
+								"2": {
+									"productosasociadosid": "0171754977",
+									"fechaaltaproductoasociado": "2013-02-18T00:00:00.0+0100",
+									"estadoproductoasociado": "INSTALADO",
+									"descripcion": "Cuota de alta de linea"
+								},
+								"3": {
+									"productosasociadosid": "0171754975",
+									"fechaaltaproductoasociado": "2013-02-18T00:00:00.0+0100",
+									"estadoproductoasociado": "INSTALADO",
+									"descripcion": "Provision Par Vacante Asignaci"
+								},
+								"4": {
+									"productosasociadosid": "0171754983",
+									"fechaaltaproductoasociado": "2013-02-18T00:00:00.0+0100",
+									"estadoproductoasociado": "DESCONECTADO",
+									"descripcion": "Promocion Bono Internacional 3"
+								},
+								"5": {
+									"productosasociadosid": "0171754976",
+									"fechaaltaproductoasociado": "2013-02-18T00:00:00.0+0100",
+									"estadoproductoasociado": "DESCONECTADO",
+									"descripcion": "Descuento Combina y Ahorra"
+								},
+								"6": {
+									"productosasociadosid": "0171754980",
+									"fechaaltaproductoasociado": "2013-02-18T00:00:00.0+0100",
+									"estadoproductoasociado": "INSTALADO",
+									"descripcion": "Bono nacional horario reducido"
+								},
+								"7": {
+									"productosasociadosid": "0227976589",
+									"fechaaltaproductoasociado": "2014-04-29T00:00:00.0+0200",
+									"estadoproductoasociado": "DESCONECTADO",
+									"descripcion": "Descuento Combina y Ahorra"
+								},
+								"8": {
+									"productosasociadosid": "0229345881",
+									"fechaaltaproductoasociado": "2014-05-26T00:00:00.0+0200",
+									"estadoproductoasociado": "INSTALADO",
+									"descripcion": "Identificacion de Llamadas"
+								},
+								"9": {
+									"productosasociadosid": "0171754978",
+									"fechaaltaproductoasociado": "2013-02-18T00:00:00.0+0100",
+									"estadoproductoasociado": "INSTALADO",
+									"descripcion": "Coste de gestion prepago"
+								},
+								"10": {
+									"productosasociadosid": "0173691310",
+									"fechaaltaproductoasociado": "2013-03-11T00:00:00.0+0100",
+									"estadoproductoasociado": "DESCONECTADO",
+									"descripcion": "Pack Ampliado 15 Euros-Postven"
+								},
+								"11": {
+									"productosasociadosid": "0173691308",
+									"fechaaltaproductoasociado": "2013-03-11T00:00:00.0+0100",
+									"estadoproductoasociado": "DESCONECTADO",
+									"descripcion": "Puesta en Servicio Orange TV"
+								},
+								"12": {
+									"productosasociadosid": "0229345880",
+									"fechaaltaproductoasociado": "2014-05-14T00:00:00.0+0200",
+									"estadoproductoasociado": "INSTALADO",
+									"descripcion": "Orange TV Cine y Series"
+								},
+								"13": {
+									"productosasociadosid": "0173691309",
+									"fechaaltaproductoasociado": "2013-03-11T00:00:00.0+0100",
+									"estadoproductoasociado": "DESCONECTADO",
+									"descripcion": "Recarga gratuita Videoclub"
+								},
+								"14": {
+									"productosasociadosid": "0171754982",
+									"fechaaltaproductoasociado": "2013-02-18T00:00:00.0+0100",
+									"estadoproductoasociado": "INSTALADO",
+									"descripcion": "Bono nacional 24H fijo a movil"
+								},
+								"15": {
+									"productosasociadosid": "0171754985",
+									"fechaaltaproductoasociado": "2013-02-18T00:00:00.0+0100",
+									"estadoproductoasociado": "INSTALADO",
+									"descripcion": "Router Livebox 2.1"
+								},
+								"16": {
+									"productosasociadosid": "0171754979",
+									"fechaaltaproductoasociado": "2013-02-18T00:00:00.0+0100",
+									"estadoproductoasociado": "INSTALADO",
+									"descripcion": "Descuento 5 Numeros Favoritos "
+								}
+							},
+							"fechafincpfijo": null
+						}
+					}
+				}
+			}
+		},
+		"informacionbasicacliente": false
+	},
+	"status": {
+		"code": "0001",
+		"type": 0,
+		"name": "OK",
+		"description": "getClientMDGRest correcto",
+		"externalcode": "OK",
+		"externaldescription": "getClientMDGRest correcto"
+	}
+}
