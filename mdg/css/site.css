@@ -1,0 +1,66 @@
+.pane:before {
+    color: rgb(252,252,252);
+}
+.bar.bar-positive{
+	height: 100px;
+	padding: 15px;
+    border: none;
+	background: #f0f9ff;
+	background: -moz-linear-gradient(top, #f0f9ff 0%,#CAF3FF 0%,#C0E5FF 1%,#7DC0EA 7%,#57BCE2 92%,#199CD0 100%);
+	background: -webkit-linear-gradient(top, #f0f9ff 0%,#CAF3FF 0%,#C0E5FF 1%,#7DC0EA 7%,#57BCE2 92%,#199CD0 100%);
+	background: linear-gradient(to bottom, #f0f9ff 0%,#CAF3FF 0%,#C0E5FF 1%,#7DC0EA 7%,#57BCE2 92%,#199CD0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#0086c9',GradientType=0 );
+	box-shadow: 2px 2px 2px #CACACA;
+}
+.bar-positive .button {
+    border-color: #2d8198;
+    background-color: #0096c1;
+    color: #fff;
+    width: 40px;
+}
+ion-header-bar:after {
+    content: '&';
+    height: 87px;
+    position: absolute;
+    top: 0.35rem; right: -5rem;
+    font-family: serif;
+    font-size: 30rem;
+	color: #89CAF1;
+    overflow: hidden;
+    z-index: -1;
+}
+ion-header-bar h1 {
+    margin: .8rem 0 .6rem 1.2rem;	
+    border-radius: 50%;
+	font-size: 26px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px #0E7AA5;
+	line-height: 1.4rem;
+}    
+ion-header-bar h2 {
+    color: #fff;
+    text-shadow: 1px 1px #035677;
+}
+
+@media (min-width: 520px) {
+	ion-header-bar h1 {
+		width: 290px;
+        margin: 0 0 -3.5rem -1rem;
+        font-size: 3.2rem;
+        line-height: 2.7rem;
+        padding: 0;
+        border-bottom: 3.2rem solid #5ebce3;
+        box-shadow: 2px 11px 5px -6px #2A9CCA;
+        text-indent: 2.5rem;
+        text-align: center;
+	}
+
+    ion-header-bar:after { height: 88px;}
+    ion-header-bar h1 span{
+        font-size: 1.7rem;
+        display: block;
+        margin: -0.3rem 0 -0.7rem;
+    }
+
+    ion-header-bar img {width: 4rem; height: 3.8rem;}
+}  

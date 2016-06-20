@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+    	<head>
+    		<meta charset="UTF-8">
+    		<title>Punto de Venta. MDG</title>
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    		<!--
+    			<link rel="shortcut icon" href="images/favicon.png">
+    			<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
+    		-->
+		    <style>
+		        /* following two viewport lines are equivalent to meta viewport statement above, and is needed for Windows */
+		        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+		        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+		        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+		        /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+		    </style>
+
+			<!--<base src="//satellite-cms-des.int.si.orange.es" />-->
+			<base src="http://localhost" />
+			<link href="https://fonts.googleapis.com/css?family=Poiret+One|Open+Sans" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" href="/orangeLib/ionic/css/ionic.css" />
+			<link rel="stylesheet" href="/orangeLib/css/main.css" />
+			<link rel="stylesheet" href="/orangeLib/css/angular-chart.css">
+			<link rel="stylesheet" href="./css/site.css" />
+			
+			<script src="/orangeLib/ionic/js/ionic.bundle.min.js"></script>
+			<script src="./js/initOptions.js"></script>
+			<script src="/orangeLib/appFactories.js"></script>
+			
+			<script src="/orangeLib/js/profile/profileData.js"></script>
+			<script src="/orangeLib/js/login/inputUserLevel.js"></script>			
+			<script src="/orangeLib/js/login/loginUser.js"></script>	
+			<script src="/orangeLib/js/mdg/mdgInit.js"></script>				
+			<script src="/orangeLib/js/mdg/mdgInfoLineaFijo.js"></script>	
+			<script src="/orangeLib/js/mdg/mdgInfoClienteMovil.js"></script>	
+			<script src="/orangeLib/js/mdg/mdgInfoLineaMovil.js"></script>	
+			<script src="/orangeLib/js/mdg/mdgListaLineasFijo.js"></script>							
+			<script src="/orangeLib/js/services/servicesList.js"></script>	
+						
+    		<script src="/orangeLib/WebServiceFactory.js"></script>
+			<script src="/orangeLib/restApiFactory.js"></script>
+			<script src="/orangeLib/messages.js"></script>
+			<script src="/orangeLib/Chart.js"></script>	
+			<script src="/orangeLib/ionic/js/angular/angular-chart.js"></script>	
+			
+			<script src="./js/main.js"></script>
+    	</head>
+    	
+    	<body ng-app="mdg">
+    		<ion-header class="bar-positive nav-title-slide-ios7"></ion-header>
+  			<ion-nav-view></ion-nav-view>
+
+			<script type="text/ng-template" id="templates/home.html">
+		        <ion-header-bar class="bar bar-positive nav-title-slide-ios7">
+		        	<img src="./images/thumbnail.png" alt="imagen Phone">
+		        	<h1><span>Aplicación</span> Punto de Venta</h1>
+		        </ion-header-bar>
+		            <ion-view>
+		                <ion-content class="padding main-header has-header" overflow-scroll='true'>
+		 					<div class="list">
+								<div class="inputDiv sepShadow">
+									<div class="input-user-level" userlevel="BPaaSCatalog.userlevel=0"></div>
+			                    	<div><x-input-msisdn  msisdn="BPaaSCatalog.msisdn" /></div>
+			                    </div>	
+								<div class="login-user sepShadow"  msisdn="BPaaSCatalog.msisdn"></div>
+	
+								<div class="profile-data posRel" msisdn="{{BPaaSCatalog.msisdn}}" level="{{BPaaSCatalog.userlevel}}"></div>
+								<div class="mdg-init" msisdn="{{BPaaSCatalog.msisdn}}" level="{{BPaaSCatalog.userlevel}}"></div>
+								<div class="mdg-info-cliente-movil" msisdn="{{BPaaSCatalog.msisdn}}" ng-if="msisdn > 600000000 && BPaaSCatalog.userlevel < 2"></div>
+								<div class="mdg-lista-lineas-fijo" msisdn={{BPaaSCatalog.msisdn}} ></div>		
+		 					</div>
+					</ion-content>
+		        </ion-view>
+			</script>
+			
+			<ion-footer-bar align-title="left" class="bar-calm">
+				<h2 class="title">&copy; VIEWNEXT 2016</h2>
+			</ion-footer-bar>
+   	</body>
+</html>
