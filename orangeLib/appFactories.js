@@ -38,8 +38,8 @@ ORANGE_APP = angular.module('OrangeLib',[])
 	STATUS_SESSION_EXPIRED = 511;
 
 	INV_HOSTNAME ="http://10.113.60.188:8091/"; // carga el historial de facturas desde microservicio
-	LIB_PATH = "http://localhost/orangeLib/";
-	//LIB_PATH = "https://satellite-cms-des.int.si.orange.es/orangeLib/";
+	//LIB_PATH = "http://localhost/orangeLib/";
+	LIB_PATH = "https://rawgit.com/ViewNext/BPaaS/master/orangeLib/";
 	TEMPLATE_PATH = LIB_PATH + "templates/";
 
 	  $httpProvider.defaults.headers.common = {};
