@@ -52,10 +52,8 @@ ORANGE_APP = angular.module('OrangeLib',[])
 	   // Allow loading from our assets domain.  Notice the difference between * and **.
 	  'http://rawgit.com/**',
 	  'https://rawgit.com/**',
-	  'https://areaprivada.orange.es/**',
-	  'https://satellite-cms-des.int.si.orange.es/**',
-	  'https://services-app-areaprivada.si.orange.es/**',
-	  'https://**amena.com/**']);
+	  'https://**' + APP_DOMAIN + '/**',
+	  'http://**' + APP_DOMAIN + '/**']);
 	
 
 	$stateProvider
