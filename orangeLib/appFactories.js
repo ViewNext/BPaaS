@@ -46,7 +46,8 @@ ORANGE_APP = angular.module('OrangeLib',[])
 	  $httpProvider.defaults.headers.post = {};
 	  $httpProvider.defaults.headers.put = {};
 	  $httpProvider.defaults.headers.patch = {};
-	
+	  $httpProvider.defaults.useXDomain = true;
+
 	$sceDelegateProvider.resourceUrlWhitelist([
 	   'self', // Allow same origin resource loads.
 	   // Allow loading from our assets domain.  Notice the difference between * and **.
