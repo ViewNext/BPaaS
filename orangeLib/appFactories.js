@@ -20,7 +20,7 @@ ORANGE_APP = angular.module('OrangeLib',[])
 					break;
 	}
 
-	BPAAS_GIDF_PASSTHROUGH = false; //true: validación a través de Identity. false: acceso directo a apaches sin validación 
+	BPAAS_GIDF_PASSTHROUGH = true; //true: validación a través de Identity. false: acceso directo a apaches sin validación 
 
 	if (BPAAS_GIDF_PASSTHROUGH) {
 		URL_WEB_SERVICES = "https://areaprivada." + APP_DOMAIN + "/neosservices/rest/secured/"; 
